@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Assessment</title>
+    <link rel="stylesheet" href="/src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="src/js/main.js"></script>
+    <link rel="icon" type="image/svg+xml" href="/src/icon.svg" />
+  </head>
+  <body>
+    <header>
+      <a href="/" class="logo">
+        <img
+          src="/src/assets/Logo.svg"
+          width="172"
+          height="37"
+          alt="modernize logo"
+        />
+      </a>
+    </header>
+    <main>
+      <!-- form -->
+      <form action="" class="form">
+        <div class="form__header">
+          <h1 class="form__title">
+            Enter to win a 3rd generation Nest Learning Thermostat worth $249.
+          </h1>
+        </div>
+        <div action="" class="form__content">
+          <div class="form__group">
+            <div class="form__field">
+              <label for="name" class="sr-only">Name</label>
+              <input
+                type="text"
+                placeholder="Name"
+                id="name"
+                name="name"
+                required
+                autocomplete="on"
+                minlength="2"
+              />
+            </div>
+          </div>
+          <div class="form__group">
+            <div class="form__field">
+              <label for="city" class="sr-only">City</label>
+              <input type="text" placeholder="City" id="city" name="city" />
+            </div>
+            <div class="form__field">
+              <label for="state" class="sr-only">State</label>
+              <input type="text" placeholder="State" id="state" name="state" />
+            </div>
+          </div>
+          <div class="form__group">
+            <div class="form__field">
+              <label for="phone" class="sr-only">Phone Number</label>
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                id="phone"
+                name="phone"
+                title="Format: (XXX) XXX-XXXX"
+                required
+                minlength="14"
+                autocomplete="on"
+              />
+            </div>
+          </div>
+          <div class="form__group">
+            <div class="form__field">
+              <label for="email" class="sr-only">Email Address</label>
+              <input
+                type="email"
+                placeholder="Email Address"
+                id="email"
+                name="email"
+                required
+                autocomplete="on"
+              />
+            </div>
+          </div>
+          <button class="form__btn">Enter to win</button>
+        </div>
+      </form>
+      <!-- Banner -->
+      <div class="banner">
+        <!-- Banner frame -->
+        <div class="banner__frame">
+          <div class="banner__frame_top">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <!-- Banner title -->
+        <div class="banner__title">
+          <span>EVEN MORE SAVINGS</span>
+        </div>
+
+        <!-- Banner content -->
+        <article class="banner__content">
+          <hgroup class="banner__header">
+            <span class="banner__tagline">ADVERTORIAL</span>
+            <h2 class="banner__headline">
+              Tricks Homeowners Use to Eliminate Bills
+            </h2>
+          </hgroup>
+          <p class="banner__text">
+            Surging energy bills, unpredictable weather patterns and
+            dissatisfaction with utility companies have homeowners scrambling…
+          </p>
+          <a
+            href="https://www.google.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="banner__link"
+            >READ MORE</a
+          >
+        </article>
+      </div>
+    </main>
+  </body>
+</html>
