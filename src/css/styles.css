@@ -29,7 +29,7 @@ body {
       #efefefe0,
       rgba(255, 255, 255, 0) 30%
     ),
-    url("/src/assets/bg_pattern.png");
+    url("../assets/bg_pattern.png");
   background-repeat: repeat;
   background-size: 458px auto;
   animation: changeBackground 10s infinite;
@@ -301,14 +301,14 @@ main {
 }
 
 /* retina and webp support*/
-@supports (background-image: url("/src/assets/bg_pattern@2x.webp")) {
+@supports (background-image: url("../assets/bg_pattern@2x.webp")) {
   body {
     background-image: linear-gradient(
         to bottom,
         #efefefe0,
         rgba(255, 255, 255, 0) 30%
       ),
-      url("/src/assets/bg_pattern.webp");
+      url("../assets/bg_pattern.webp");
   }
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
     only screen and (min--moz-device-pixel-ratio: 2),
@@ -321,7 +321,7 @@ main {
           #efefefe0,
           rgba(255, 255, 255, 0) 30%
         ),
-        url("/src/assets/bg_pattern@2x.webp");
+        url("../assets/bg_pattern@2x.webp");
     }
   }
 }
