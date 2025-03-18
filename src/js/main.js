@@ -35,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function () {
    */
   const submitForm = function (e) {
     e.preventDefault();
+    /* Control form submit */
+    if (formSubmitted()) {
+      console.error('Form already submitted');
+
+      return
+    }
     /* Validation of requiere inputs */
     if (!validateForm(nameInput, phoneInput, emailInput)) {
       console.error('Error Validation');
@@ -42,19 +48,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     handleFormSubmit(form, postFormUrl);
     setFormSubmitted(true)
+    phoneInput.removeEventListener('input', handleInput);
+    phoneInput.removeEventListener('blur', handleBlur);
 
   };
 
   form.addEventListener('submit', submitForm)
 
-  if (formSubmitted()) {
-    /* Remove listeners */
-    form.removeEventListener('submit', submitForm)
-    phoneInput.removeEventListener('input', handleInput);
-    phoneInput.removeEventListener('blur', handleBlur);
-  }
-
 })
+
+
 
 /**
  * Form Validation
