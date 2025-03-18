@@ -93,3 +93,9 @@ I verified page performance using Lighthouse to optimize loading speed and user 
 The most complicated thing was implementing the phone mask, specifically when handling number editing. In my first implementation, the cursor got stuck on the symbols (, ) and -. To solve this, I investigated how to detect if the user was deleting characters (using events like deleteContentBackward) and adjusted the mask logic. 
 
 And also research on how to use AJAX for form submission, as I haven't implemented it for a long time.
+
+## Final thoughts
+
+The UX can be improved by adding messages to the user below the input when the input is invalid. This would help the user to understand what is wrong, at the moment the only indication is the border color of the input have changed to red ( #D50303).
+
+I've added console.error messages when validation fails for debugging purposes.
